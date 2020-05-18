@@ -37,8 +37,7 @@ public class MathS {
         return rez;
     }
     String readFile () {
-        String path = "/Users/anna/Documents/Java/Лаб3/F1.txt";
-        File file = new File(path);
+        File file = new File("input.txt");
         try {
             Scanner scanner = new Scanner(file);
             String line = scanner.nextLine();

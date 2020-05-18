@@ -70,16 +70,13 @@ public class PostfixForm extends MathS {
         }
     }
     void translitPostfix (){
-        System.out.println("Tokens.size = " + Tokens.size());
         for (int i=0; i<Tokens.size(); i++){
 
             System.out.println("i = " + i);
             String token = Tokens.get(i);
-            System.out.println("token = " + token);
 
             if ( isParametr(token) ) {
                 postfixTokens.add(token);
-                System.out.println("token is parametr ");
             } else {
                 if (token == "("){
                     stackForAlgoritm.push(token);

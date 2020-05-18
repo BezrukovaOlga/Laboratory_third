@@ -19,7 +19,7 @@ public class Main {
             calc.count();
             calc.print();
         } else{
-            System.out.println("Error! The expression was entered incorrectly!");
+            System.out.println("Error!");
         }
     }
 }

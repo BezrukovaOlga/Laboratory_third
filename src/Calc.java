@@ -116,16 +116,16 @@ public class Calc extends MathD {
                         d1 = (Double) stackForAlgoritm.pop();
                         switch (indexOfDelimiter) {
                             case (0):
-                                d3 = Math.sin(d1);
+                                d3 = Math.sin(Math.toRadians(d1));
                                 break;
                             case (1):
-                                d3 = Math.cos(d1);
+                                d3 = Math.cos(Math.toRadians(d1));
                                 break;
                             case (2):
-                                d3 = Math.tan(d1);
+                                d3 = Math.tan(Math.toRadians(d1));
                                 break;
                             case (3):
-                                d3 = 1 / Math.tan(d1);
+                                d3 = 1 / Math.tan(Math.toRadians(d1));
                                 break;
                             default:
                                 d3 = null;

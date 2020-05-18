@@ -18,10 +18,8 @@ public class CorrectRecord extends MathS {
         boolean rez = true;
         int flag1 = 0, flag2 = 0;
         for (int i = 0; i < Tokens.size(); i++) {
-            System.out.print("Tokens.get(i) "+ Tokens.get(i));
             if ( isDelimiter(Tokens.get(i)) ) {
                 if (!Tokens.get(i).equals(Delimiter[4]) && !Tokens.get(i).equals(Delimiter[5]) ){
-                    System.out.print("   заход");
                     flag1 = flag1+1;
                     flag2=0;
                 }
@@ -32,8 +30,6 @@ public class CorrectRecord extends MathS {
                 flag1 = 0;
                 flag2 = 0;
             }
-            System.out.print(" i = "+i+" flag1 = "+ flag1);
-            System.out.println();
             if (flag1 == 2 || flag2==2){
                 rez = false;
             }
@@ -44,7 +40,6 @@ public class CorrectRecord extends MathS {
 
     boolean errorByDelimiter() {
         boolean rez = true;
-        System.out.println("Tokens.size() = "+Tokens.size());
         for (int i = 0; i < Tokens.size(); i++) {
             if (Tokens.get(i) == ""){
                 System.out.println("i= "+i);

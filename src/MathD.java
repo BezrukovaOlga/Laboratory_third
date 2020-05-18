@@ -40,7 +40,6 @@ public class MathD {
         return rez;
     }
     String readFromFile() {
-        String path = "/Users/anna/Documents/Java/Лаб3/F1.txt";
         File file = new File("input.txt");
         try {
             Scanner scanner = new Scanner(file);
